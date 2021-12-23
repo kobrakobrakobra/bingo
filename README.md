@@ -1,4 +1,4 @@
-# melymagyar-bingo
+# fml-bingo
 
 ## Project setup
 ```
