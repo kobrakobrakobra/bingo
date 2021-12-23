@@ -27,8 +27,8 @@ export default {
   },
   data() {
     return {
-      tableWidth: 4,
-      tableHeight: 2,
+      tableWidth: 8,
+      tableHeight: 1,
       answers: [],
     }
   },
