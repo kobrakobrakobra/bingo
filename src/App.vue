@@ -21,7 +21,7 @@
 <style>
 
 body {
-  background-color: #F7F9FB;
+  background-color: #eceff6;
   font-family: 'Open Sans', sans-serif;
 }
 

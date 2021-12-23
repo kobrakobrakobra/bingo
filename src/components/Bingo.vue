@@ -16,9 +16,10 @@
     </button>
     <ul class="rules">
       <b>Szabályok:</b>
+      <li>A játék nem publikus. Ha valaki rájön, akkor messengeren elküldjük neki a linket.</li>
       <li>A kör megnyeréséhez mind a 6 kártyádat ki kell pipálnod.</li>
       <li>Egy kártyát akkor pipálhatsz ki, ha az azon lévő szöveg elhangzott, vagy az adott tevékenység megtörtént.</li>
-      <li>A saját kártyáidon lévő szövegeket nem mondhatod ki.</li>
+      <li>Ha a saját kártyáidon lévő szöveget kimondod, akkor azt te nem pipálhatod ki (mások viszont igen).</li>
       <li>Nem kérdezhetsz olyat, amire a válasz a kártyádon szerepel. De a beszélgetést terelheted úgy, hogy a válaszod felé menjen :)</li>
       <li>Bármikor kérhetsz magadnak új osztást, de olyankor a korábban elhangzottakat nem pipálhatod ki.</li>
       <li>Ha megvan mind a 6 kártyád, akkor bingód van. Ilyenkor ki kell mondanod hangosan, hogy "Bingó!"</li>
