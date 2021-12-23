@@ -12,13 +12,13 @@
       </div>
     </div>
     <button type="button" class="btn btn-bingo mx-auto d-block mt-5" @click="newGame">
-      Új ebéd!
+      Új kör!
     </button>
   </div>
 </template>
 
 <script>
-import BingoElements from '../assets/items'
+import BingoElements from '../assets/items-custom'
 import _ from 'lodash'
 
 export default {
@@ -40,7 +40,7 @@ export default {
       element.count++;
 
       if (this.isBingo) {
-        alert('Egészségetekre, hajrá Magyarország, hajrá Magyarok!')
+        alert('Bingó!')
       }
     },
     newGame() {
@@ -80,7 +80,7 @@ export default {
   background-image: linear-gradient(0deg, hsla(0, 0%, 70.6%, .8), hsla(0, 0%, 100%, 0.25));
   border: 5px solid #c00;
   font-weight: bold;
-  font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   word-wrap: break-word;
   background-repeat: no-repeat;
