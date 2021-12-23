@@ -14,9 +14,16 @@
     <button type="button" class="btn btn-bingo mx-auto d-block mt-5" @click="newGame">
       Új kör
     </button>
-    <p class="rules">
-      Lorem ipsum dolor sit amet consectutor. Lorem ipsum dolor sit amet consectutor. Lorem ipsum dolor sit amet consectutor.
-    </p>
+    <ul class="rules">
+      <b>Szabályok:</b>
+      <li>A kör megnyeréséhez mind a 6 kártyádat ki kell pipálnod.</li>
+      <li>Egy kártyát akkor pipálhatsz ki, ha az azon lévő szöveg elhangzott, vagy az adott tevékenység megtörtént.</li>
+      <li>A saját kártyáidon lévő szövegeket nem mondhatod ki.</li>
+      <li>Nem kérdezhetsz olyat, amire a válasz a kártyádon szerepel. De a beszélgetést terelheted úgy, hogy a válaszod felé menjen :)</li>
+      <li>Bármikor kérhetsz magadnak új osztást, de olyankor a korábban elhangzottakat nem pipálhatod ki.</li>
+      <li>Ha megvan mind a 6 kártyád, akkor bingód van. Ilyenkor ki kell mondanod hangosan, hogy "Bingó!"</li>
+      <li>Ha valakinek bingója van, akkor mindenkinek új osztást kell kérnie.</li>
+    </ul>
   </div>
 </template>
 

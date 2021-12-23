@@ -1,6 +1,6 @@
 <template>
   <header>
-    <p class="mb-0">Ünnepi bingó - 2021</p>
+    <p class="mb-0">Ünnepi bingó</p>
   </header>
 </template>
 
