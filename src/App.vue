@@ -19,8 +19,10 @@
 </script>
 
 <style>
+
 body {
-  background-color: #ab0000;
+  background-color: #F7F9FB;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .notouch {
@@ -31,6 +33,7 @@ body {
   display: flex;
   min-height: 100vh;
   flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
 }
 
 #app > .app-content {

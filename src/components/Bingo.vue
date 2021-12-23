@@ -1,5 +1,5 @@
 <template>
-  <div class="notouch py-5">
+  <div class="notouch">
     <div class="bingo-cards-wrapper" v-if="answers.length > 0">
       <div class="bingo-grid-row" v-bind:key="y" v-for="y in tableHeight">
         <div class="bingo-card"
@@ -12,8 +12,11 @@
       </div>
     </div>
     <button type="button" class="btn btn-bingo mx-auto d-block mt-5" @click="newGame">
-      Új kör!
+      Új kör
     </button>
+    <p class="rules">
+      Lorem ipsum dolor sit amet consectutor. Lorem ipsum dolor sit amet consectutor. Lorem ipsum dolor sit amet consectutor.
+    </p>
   </div>
 </template>
 
@@ -27,7 +30,7 @@ export default {
   },
   data() {
     return {
-      tableWidth: 8,
+      tableWidth: 6,
       tableHeight: 1,
       answers: [],
     }
@@ -64,8 +67,12 @@ export default {
 
 <style>
 .bingo-cards-wrapper {
-  padding: 5px;
+  padding: 0 24px;
   margin: 0 auto;
+}
+
+.py-5 {
+  margin-top: 0;
 }
 
 .bingo-grid-row {
@@ -73,21 +80,21 @@ export default {
 }
 
 .bingo-card {
-  margin: 5px;
+  margin: 24px 0;
+  box-shadow: 0px 10px 15px -3px rgba(0, 0, 0, 0.1), 0px 4px 6px -4px rgba(0, 0, 0, 0.1);
+  height: 72px;
+  border-radius: 24px;
+  border: none;
   cursor: pointer;
   text-align: center;
-  background-color: hsla(0, 0%, 100%, 0.95);
-  background-image: linear-gradient(0deg, hsla(0, 0%, 70.6%, .8), hsla(0, 0%, 100%, 0.25));
-  border: 5px solid #c00;
+  background-color: #fff;
   font-weight: bold;
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 18px;
   word-wrap: break-word;
   background-repeat: no-repeat;
   background-position: 50%;
   background-size: cover;
-  padding: 5px 10px;
-  color: #333;
+  color: #1b1f27;
   flex: 1 1 0;
   display: flex;
   align-items: center;
@@ -95,53 +102,52 @@ export default {
 }
 
 .bingo-card:hover {
-  border: 5px solid #e00;
-  color: #111;
+  color: #1b1f27;
 }
 
 .bingo-card.active {
   background-color: hsla(0, 0%, 66.7%, 0.85);
-  border-color: #f22;
   animation-name: bingo;
   animation-duration: 2s;
-  animation-iteration-count: infinite;
+  animation-iteration-count: 1;
 }
 
 .btn-bingo {
-  border-color: #eee;
-  background-color: #cc0000;
   color: #eee;
   font-weight: bold;
+  background-color: #27ae60;
+  border: none;
+  width: 50%;
+  border-radius: 32px;
+  font-size: 18px;
+  padding: 16px;
 }
 
 .btn-bingo:focus {
   box-shadow: none;
+  border: none;
 }
 
 .btn-bingo:hover {
   color: #eee;
-  background-color: #ee0000;
+  border: none;
+}
+
+.rules {
+  margin: 48px 24px;
 }
 
 @keyframes bingo {
   0% {
-    border-color: #ff2222;
-  }
-
-  25% {
-    border-color: #ee0000;
-  }
-
-  50% {
-    border-color: #ff9911;
+    background-color: #fff;
   }
 
   100% {
-    border-color: #ff2222;
+    background-color: hsla(0, 0%, 66.7%, 0.85);
   }
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 1800px) {
   .bingo-grid-row {
     display: block;
   }
