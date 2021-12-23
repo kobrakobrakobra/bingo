@@ -27,8 +27,8 @@ export default {
   },
   data() {
     return {
-      tableWidth: 5,
-      tableHeight: 5,
+      tableWidth: 4,
+      tableHeight: 2,
       answers: [],
     }
   },
@@ -40,7 +40,7 @@ export default {
       element.count++;
 
       if (this.isBingo) {
-        alert('Bingó!')
+        alert('Bingó! Szólj, hogy új kör indul.')
       }
     },
     newGame() {
